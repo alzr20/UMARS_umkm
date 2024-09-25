@@ -1,0 +1,294 @@
+/* Custom Body Font */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem; /* Ukuran font lebih kecil */
+}
+
+/* CSS untuk footer */
+.custom-footer {
+  background-color: rgba(212, 175, 55, 0.9);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 1rem;
+}
+
+.container {
+  width: max-content;
+}
+
+.horizontal-scroll {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.custom-footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navbar Styles */
+.bg-custom {
+  background-color: rgba(
+    212,
+    175,
+    55,
+    0.9
+  ); /* Warna emas dengan transparansi */
+}
+
+.navbar-nav {
+  flex-direction: row; /* Menyusun item navbar secara horizontal */
+}
+
+.navbar-nav .nav-link {
+  color: #0044cc; /* Warna biru untuk link */
+  margin-bottom: 0.5rem;
+  font-weight: 600; /* Teks tebal */
+  font-size: 0.875rem; /* Penyesuaian ukuran font */
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff; /* Warna putih saat hover */
+}
+
+/* Navbar Dropdown Styles */
+.navbar-nav .dropdown-menu {
+  right: 0; /* Menyelaraskan menu dropdown ke kanan */
+  left: auto; /* Menghindari meluas ke kiri */
+}
+
+/* Card Styles */
+.card {
+  border-radius: 0.5rem;
+}
+
+.card-img-top {
+  border-radius: 0.5rem 0.5rem 0 0;
+  transition: transform 0.3s ease; /* Efek zoom halus */
+}
+
+.card-img-top:hover {
+  transform: scale(1.1); /* Efek zoom-in saat hover */
+}
+
+.card-body {
+  padding: 1rem; /* Padding lebih kecil pada card */
+}
+
+/* Sidebar Styles */
+.sidebar {
+  height: 100vh; /* Sidebar mengisi seluruh tinggi viewport */
+  background-color: #422091; /* Warna latar belakang sidebar */
+  color: #ffffff; /* Warna teks putih untuk keterbacaan */
+  padding: 1rem; /* Padding untuk tata letak yang lebih baik */
+  position: fixed; /* Posisi tetap untuk tetap di tempat */
+  top: 0;
+  left: 0;
+  width: 15%; /* Menyesuaikan lebar sidebar */
+  display: flex; /* Menggunakan flexbox untuk menata konten */
+  flex-direction: column; /* Menyusun item secara vertikal */
+}
+
+/* Sidebar Navigation */
+.sidebar .nav {
+  width: 100%; /* Memastikan nav mengisi lebar penuh */
+}
+
+.sidebar .nav-item {
+  margin-bottom: 1rem; /* Jarak antara item menu */
+}
+
+.sidebar .nav-link {
+  color: #ffffff; /* Warna teks putih untuk link */
+  font-size: 1rem; /* Ukuran font yang lebih besar untuk keterbacaan */
+  text-align: center; /* Teks di tengah link */
+  padding: 0.5rem 1rem; /* Padding untuk tampilan yang lebih baik */
+  border-radius: 0.5rem; /* Sudut melingkar */
+  transition: background-color 0.3s ease; /* Transisi halus untuk efek hover */
+}
+
+.sidebar .nav-link:hover {
+  color: #dcdcdc; /* Warna abu-abu terang saat hover */
+  background-color: #333333; /* Latar belakang gelap saat hover */
+}
+
+/* Main Content Styles */
+.main-content {
+  padding: 1rem;
+  background-color: #ffffff;
+  margin-left: 15%; /* Jarak kiri untuk mengakomodasi sidebar */
+  min-height: 100vh;
+}
+
+.dashboard-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Mengizinkan item untuk membungkus pada layar kecil */
+  margin-top: 20px;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 180px; /* Menyesuaikan lebar kartu statistik */
+  height: 130px; /* Menyesuaikan tinggi kartu statistik */
+  font-size: 1rem; /* Ukuran font lebih kecil */
+  text-align: center;
+  border-radius: 0.5rem; /* Sudut melingkar */
+  padding: 15px; /* Padding di dalam kartu */
+}
+
+.stat-card i {
+  font-size: 2rem; /* Ukuran ikon */
+  margin-bottom: 10px; /* Jarak antara ikon dan teks */
+}
+
+.stat-value {
+  font-size: 1.5rem; /* Ukuran nilai */
+  font-weight: 700; /* Teks tebal */
+}
+
+.stat-label {
+  font-size: 0.875rem; /* Ukuran label */
+  font-weight: 400; /* Teks reguler */
+}
+
+/* Table Borders */
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  border-collapse: collapse; /* Menghapus ruang antara batas */
+}
+
+.table th,
+.table td {
+  padding: 0.75rem; /* Padding untuk sel tabel */
+  vertical-align: middle; /* Penjajaran vertikal tengah */
+  border: 1px solid #dee2e6; /* Batas tabel */
+}
+
+.table thead th {
+  background-color: #f8f9fa; /* Latar belakang header */
+  font-weight: 700; /* Teks header tebal */
+  text-align: center; /* Teks header di tengah */
+}
+
+.table tbody td {
+  text-align: center; /* Teks body tabel di tengah */
+}
+
+.table tfoot th,
+.table tfoot td {
+  font-weight: 700; /* Teks footer tebal */
+  text-align: right; /* Teks footer di kanan */
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Latar belakang baris genap */
+}
+
+.table tr:hover {
+  background-color: #e9ecef; /* Latar belakang saat hover */
+}
+
+.table .col-username {
+  width: 150px; /* Menyesuaikan lebar kolom Username */
+}
+
+.table .col-items {
+  width: 200px; /* Menyesuaikan lebar kolom Items Ordered */
+}
+
+.table .col-address {
+  width: 250px; /* Menyesuaikan lebar kolom Shipping Address */
+}
+
+.table .col-status {
+  width: 100px; /* Menyesuaikan lebar kolom Status */
+}
+
+/* Navbar icon sizes */
+.navbar-nav .nav-link i {
+  font-size: 1.5em; /* Ukuran ikon navbar */
+  margin-right: 0.5em; /* Jarak antara ikon dan teks */
+}
+
+/* Button icon sizes */
+.btn i {
+  font-size: 1.2em; /* Ukuran ikon tombol */
+  margin-right: 0.5em; /* Jarak antara ikon dan teks tombol */
+}
+
+/* Media Query untuk Tablet (Lebar: 768px - 1024px) */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 15%; /* Menyesuaikan lebar sidebar untuk tablet */
+    padding: 1rem; /* Padding lebih untuk tampilan yang lebih baik */
+  }
+
+  .main-content {
+    margin-left: 15%; /* Jarak kiri untuk sidebar yang lebih kecil */
+  }
+
+  .table {
+    font-size: 0.85rem; /* Ukuran font tabel lebih kecil */
+  }
+
+  .table th,
+  .table td {
+    padding: 0.5rem; /* Padding sel tabel lebih kecil */
+  }
+
+  .stat-card {
+    width: 150px; /* Menyesuaikan lebar kartu statistik */
+    height: 110px; /* Menyesuaikan tinggi kartu statistik */
+  }
+}
+
+/* Media Query untuk Perangkat Mobile (Lebar: hingga 767px) */
+@media (max-width: 767px) {
+  .sidebar {
+    width: 100%; /* Sidebar penuh lebar pada perangkat mobile */
+    height: auto; /* Tinggi otomatis untuk menyesuaikan konten */
+    position: relative; /* Posisi relatif */
+    padding: 1rem; /* Padding lebih untuk kenyamanan sentuhan */
+  }
+
+  .main-content {
+    margin-left: 0; /* Tanpa jarak kiri */
+    padding: 1rem 0; /* Penyesuaian padding untuk tampilan lebih baik */
+  }
+
+  .navbar-nav {
+    flex-direction: column; /* Menumpuk item navbar secara vertikal */
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1rem; /* Ukuran font lebih besar untuk keterbacaan */
+  }
+
+  .table {
+    font-size: 0.8rem; /* Ukuran font tabel lebih kecil */
+  }
+
+  .table th,
+  .table td {
+    padding: 0.5rem; /* Padding sel tabel lebih kecil */
+  }
+
+  .dashboard-stats {
+    flex-direction: column; /* Menumpuk kartu statistik secara vertikal */
+  }
+
+  .stat-card {
+    width: 100%; /* Kartu statistik penuh lebar */
+    height: auto; /* Tinggi otomatis untuk menyesuaikan konten */
+  }
+}
